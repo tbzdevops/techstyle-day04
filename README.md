@@ -1,4 +1,4 @@
-# Tag 04 — CI Grundlagen und GitHub CI
+# Tag 04 Projekt — CI Grundlagen und GitHub CI
 
 > **Projektauftrag TechStyle Online Shop.** Dieses Repository ist dein
 > Startpunkt fuer Tag 4 und enthaelt den Stand nach Tag 3.
@@ -75,7 +75,7 @@ sobald eine Aenderung es wieder bricht, verschwindet der Haken. Du musst hier
 nichts von Hand pflegen — beim naechsten Push wird die Liste ueberschrieben.
 
 <!-- c50:progress -->
-**Fortschritt: 0 / 16 Kriterien erfüllt** ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ — Stand: 2026-08-23 22:07 UTC.
+**Fortschritt: 0 / 16 Kriterien erfüllt** ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ — noch nicht geprueft.
 <!-- /c50:progress -->
 
 - [ ] ⬜ Aufgabe 1: CI-Workflow-Datei vorhanden (.github/workflows/ci.yml)
