@@ -75,25 +75,25 @@ sobald eine Aenderung es wieder bricht, verschwindet der Haken. Du musst hier
 nichts von Hand pflegen — beim naechsten Push wird die Liste ueberschrieben.
 
 <!-- c50:progress -->
-**Fortschritt: 0 / 16 automatisch geprueften Kriterien erfuellt.** Stand: 2026-08-23 21:54 UTC.
+**Fortschritt: 0 / 16 Kriterien erfüllt** ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ — noch nicht geprueft.
 <!-- /c50:progress -->
 
-- [ ] Aufgabe 1: CI-Workflow-Datei vorhanden (.github/workflows/ci.yml)
-- [ ] Aufgabe 1: Workflow definiert mindestens einen Job (jobs:)
-- [ ] Aufgabe 1: Pipeline wird bei Push ausgelöst (on: push)
-- [ ] Aufgabe 1: Branching-Strategie berücksichtigt (main und day_*)
-- [ ] Aufgabe 1: Abhängigkeiten werden installiert (pip install -r requirements.txt)
-- [ ] Aufgabe 1: Test-Abhängigkeiten in requirements.txt (pytest, pytest-mock)
-- [ ] Aufgabe 1: conftest.py im Projektstamm vorhanden
-- [ ] Aufgabe 2: Unit-Tests vorhanden (tests/test_*.py)
-- [ ] Aufgabe 2: Integrationstest vorhanden (tests/integration/test_*.py)
-- [ ] Aufgabe 2: Tests prüfen die Flask-Anwendung (Test-Client)
-- [ ] Aufgabe 2: Test-Schritt in der Pipeline (pytest)
-- [ ] Aufgabe 2: Pipeline schlägt bei Fehlern fehl (kein continue-on-error)
-- [ ] Aufgabe 3: Linter in requirements.txt (flake8/pylint/ruff/black)
-- [ ] Aufgabe 3: Linter-Schritt in der Pipeline (flake8/pylint)
-- [ ] Aufgabe 3: Linter-Regeln konfiguriert (max-line-length/ignore/select)
-- [ ] Aufgabe 3: Pipeline bricht bei Style-Verstössen ab (kein --exit-zero / || true)
+- [ ] ⬜ Aufgabe 1: CI-Workflow-Datei vorhanden (.github/workflows/ci.yml)
+- [ ] ⬜ Aufgabe 1: Workflow definiert mindestens einen Job (jobs:)
+- [ ] ⬜ Aufgabe 1: Pipeline wird bei Push ausgelöst (on: push)
+- [ ] ⬜ Aufgabe 1: Branching-Strategie berücksichtigt (main und day_*)
+- [ ] ⬜ Aufgabe 1: Abhängigkeiten werden installiert (pip install -r requirements.txt)
+- [ ] ⬜ Aufgabe 1: Test-Abhängigkeiten in requirements.txt (pytest, pytest-mock)
+- [ ] ⬜ Aufgabe 1: conftest.py im Projektstamm vorhanden
+- [ ] ⬜ Aufgabe 2: Unit-Tests vorhanden (tests/test_*.py)
+- [ ] ⬜ Aufgabe 2: Integrationstest vorhanden (tests/integration/test_*.py)
+- [ ] ⬜ Aufgabe 2: Tests prüfen die Flask-Anwendung (Test-Client)
+- [ ] ⬜ Aufgabe 2: Test-Schritt in der Pipeline (pytest)
+- [ ] ⬜ Aufgabe 2: Pipeline schlägt bei Fehlern fehl (kein continue-on-error)
+- [ ] ⬜ Aufgabe 3: Linter in requirements.txt (flake8/pylint/ruff/black)
+- [ ] ⬜ Aufgabe 3: Linter-Schritt in der Pipeline (flake8/pylint)
+- [ ] ⬜ Aufgabe 3: Linter-Regeln konfiguriert (max-line-length/ignore/select)
+- [ ] ⬜ Aufgabe 3: Pipeline bricht bei Style-Verstössen ab (kein --exit-zero / || true)
 
 ## Abnahmekriterien selber pruefen
 
