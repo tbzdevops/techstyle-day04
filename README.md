@@ -69,35 +69,31 @@ Erzwinge konsistente Coding-Standards.
 
 ## Abnahmekriterien
 
-Diese 16 Kriterien werden bei jedem Push automatisch geprueft:
+Diese Kriterien prueft die Pipeline bei jedem Push automatisch. **Die Haken
+setzt die Pipeline selbst:** ein erfuelltes Kriterium wird abgehakt, und
+sobald eine Aenderung es wieder bricht, verschwindet der Haken. Du musst hier
+nichts von Hand pflegen — beim naechsten Push wird die Liste ueberschrieben.
 
-**Aufgabe 1: Repository-Setup und erste CI-Pipeline**
+<!-- c50:progress -->
+**Fortschritt: 0 / 16 automatisch geprueften Kriterien erfuellt.** Noch nicht geprueft.
+<!-- /c50:progress -->
 
-- [ ] CI-Workflow-Datei vorhanden (`.github/workflows/ci.yml`)
-- [ ] Workflow definiert mindestens einen Job (`jobs:`)
-- [ ] Pipeline wird bei Push ausgeloest (`on: push`)
-- [ ] Branching-Strategie beruecksichtigt (`main` und `day_*`)
-- [ ] Abhaengigkeiten werden installiert (`pip install -r requirements.txt`)
-- [ ] Test-Abhaengigkeiten in `requirements.txt` (pytest, pytest-mock)
-- [ ] `conftest.py` im Projektstamm vorhanden
-
-**Aufgabe 2: Automatisierte Tests und Code-Qualitaet**
-
-- [ ] Unit-Tests vorhanden (`tests/test_*.py`)
-- [ ] Integrationstest vorhanden (`tests/integration/test_*.py`)
-- [ ] Tests pruefen die Flask-Anwendung (Test-Client)
-- [ ] Test-Schritt in der Pipeline (pytest)
-- [ ] Pipeline schlaegt bei Fehlern fehl (kein `continue-on-error`)
-
-**Aufgabe 3: Code-Qualitaet und Linter-Integration**
-
-- [ ] Linter in `requirements.txt` (flake8/pylint/ruff/black)
-- [ ] Linter-Schritt in der Pipeline (flake8/pylint)
-- [ ] Linter-Regeln konfiguriert (max-line-length/ignore/select)
-- [ ] Pipeline bricht bei Style-Verstoessen ab (kein `--exit-zero` / `|| true`)
-
-> Die Autograding-Pipeline `classroom.yml` ist von der Erkennung
-> ausgenommen — sie zaehlt nicht als deine CI-Loesung.
+- [ ] Aufgabe 1: CI-Workflow-Datei vorhanden (.github/workflows/ci.yml)
+- [ ] Aufgabe 1: Workflow definiert mindestens einen Job (jobs:)
+- [ ] Aufgabe 1: Pipeline wird bei Push ausgelöst (on: push)
+- [ ] Aufgabe 1: Branching-Strategie berücksichtigt (main und day_*)
+- [ ] Aufgabe 1: Abhängigkeiten werden installiert (pip install -r requirements.txt)
+- [ ] Aufgabe 1: Test-Abhängigkeiten in requirements.txt (pytest, pytest-mock)
+- [ ] Aufgabe 1: conftest.py im Projektstamm vorhanden
+- [ ] Aufgabe 2: Unit-Tests vorhanden (tests/test_*.py)
+- [ ] Aufgabe 2: Integrationstest vorhanden (tests/integration/test_*.py)
+- [ ] Aufgabe 2: Tests prüfen die Flask-Anwendung (Test-Client)
+- [ ] Aufgabe 2: Test-Schritt in der Pipeline (pytest)
+- [ ] Aufgabe 2: Pipeline schlägt bei Fehlern fehl (kein continue-on-error)
+- [ ] Aufgabe 3: Linter in requirements.txt (flake8/pylint/ruff/black)
+- [ ] Aufgabe 3: Linter-Schritt in der Pipeline (flake8/pylint)
+- [ ] Aufgabe 3: Linter-Regeln konfiguriert (max-line-length/ignore/select)
+- [ ] Aufgabe 3: Pipeline bricht bei Style-Verstössen ab (kein --exit-zero / || true)
 
 ## Abnahmekriterien selber pruefen
 
@@ -120,7 +116,8 @@ Kriterium fehlt, endet das Skript mit Exit-Code 1.
 
 **In GitHub** — bei jedem Push:
 
-Der Workflow **🎓 Classroom Autograding** laeuft automatisch. Ergebnis im Tab
+Der Workflow **🎓 Classroom Autograding** laeuft automatisch und hakt die
+erfuellten Kriterien oben im README ab. Ergebnis im Tab
 **Actions** → letzter Run → Job *Abnahmekriterien pruefen*. Jedes Kriterium
 erscheint zusaetzlich als Annotation direkt im Run.
 
