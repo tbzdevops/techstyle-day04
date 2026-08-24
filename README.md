@@ -121,6 +121,10 @@ erfuellten Kriterien oben im README ab. Ergebnis im Tab
 **Actions** → letzter Run → Job *Abnahmekriterien pruefen*. Jedes Kriterium
 erscheint zusaetzlich als Annotation direkt im Run.
 
+Die Punktzahl ist **anteilig**: jedes erfuellte Abnahmekriterium zaehlt einen
+Punkt (z. B. `Points 8/13`). Gruen wird der Lauf erst, wenn alle Kriterien
+erfuellt sind — Teilpunkte gibt es aber ab dem ersten.
+
 ## Anwendung lokal starten
 
 ```bash
